@@ -1,0 +1,14 @@
+extends ../layout/main
+block content
+    main.whole
+        img(src="./src/assets/img/auth/img.png", alt="room").whole__img
+        .login__content.modal-card
+            h2.title.mb20 Войти  
+            .form-control 
+                input(type="email" placeholder="Email")
+            .form-control.mb20 
+                input(type="password" placeholder="Пароль")
+            button.purple-big.mb30 Войти
+            .flex.sb.ac
+                p.dark-text Нет аккаунта на Toxin?
+                button.btn Создать

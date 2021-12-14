@@ -1,0 +1,61 @@
+mixin list(link,name)
+    li.footer-content__item 
+        a(href=link).link=name 
+
+mixin subtitle(text)
+    h3.subtitle=text
+
+footer.footer 
+    .container
+        .footer-content.flex.sb
+            .footer-content__info
+                include ../modules/titleLogo
+                p.footer-text.grey-text.
+                    Бронирование номеров в лучшем отеле  
+                    2019 года по версии 
+                    ассоциации «Отельные взгляды»
+            nav.footer-content-nav
+                +subtitle('Навигация')
+                ul.footer-content__list 
+                    +list('#', 'О нас')
+                    +list('#', 'Новости')
+                    +list('#', 'Служба поддержки')
+                    +list('#', 'Услуги')
+            .footer-content__about 
+                +subtitle('О нас')
+                ul.footer-content__list 
+                    +list('#', 'О сервисе')
+                    +list('#', 'Наша команда')
+                    +list('#', 'Вакансии')
+                    +list('#', 'Инвесторы')
+            .footer-content__help
+                +subtitle('Служба поддержки')
+                ul.footer-content__list 
+                    +list('#', 'Соглашения')
+                    +list('#', 'Сообщества')
+                    +list('#', 'Связь с нами')  
+            .footer-content__sub  
+                +subtitle('Подписка')
+                p.footer-text.grey-text.
+                    Получайте специальные 
+                    предложения и новости сервиса
+        
+        
+        
+    .footer-bar
+        .container.flex.sb.ac
+            p.footer-bar__copyright Copyright © 2018 Toxin отель. Все права защищены.
+            ul.footer-bar__list.flex.ac
+                li.footer-bar__item
+                    a.footer-bar__link(href="#")
+                        img.footer-bar__img(src="./src/assets/img/footer/tw.svg", alt="twitter") 
+                li.footer-bar__item
+                    a.footer-bar__link(href="#")
+                        img.footer-bar__img(src="./src/assets/img/footer/f.svg", alt="facebook") 
+                li.footer-bar__item
+                    a.footer-bar__link(href="#")
+                        img.footer-bar__img(src="./src/assets/img/footer/in.svg", alt="instagram") 
+                
+        
+            
+        

@@ -1,0 +1,42 @@
+extends ../layout/main
+block content
+    main.whole
+        img(src="./src/assets/img/auth/img.png", alt="room").whole__img
+        .sing-in__card.modal-card
+            h2.title.mb20 Регистрация аккаунта
+            .form-control 
+                input(type="text" placeholder="Имя") 
+            .form-control 
+                input(type="text" placeholder="Фамилия")
+            .flex.ac.mb20
+                .radio-control
+                    <label for="male"> 
+                        input(type="radio"  id="male" name="gender")
+                        span.radio-control__custom
+                        span.grey-text Мужчина
+                    </label>
+                .radio-control
+                    <label for="female"> 
+                        input(type="radio" id="female" name="gender")
+                        span.radio-control__custom
+                        span.grey-text Женщина
+                    </label>
+            .form-control.mb20
+                label.subtitle Дата рождения
+                input(type="text" placeholder="ДД.ММ.ГГГГ")
+
+            .form-control
+                label.subtitle Данные для входа в сервич
+                input(type="email" placeholder="Email")
+            .form-control
+                input(type="password" placeholder="Пароль")
+            .slide-checkbox
+                <label>
+                    input(type="checkbox")
+                    span.slide-checkbox__custom
+                    span.grey-text Получать спецпредложения
+                </label>
+            button.purple-big.mt20.mb30 Зарегистрироваться
+            .flex.sb.ac 
+                p.dark-text Уже есть аккаунт на Toxin
+                button.btn Войти

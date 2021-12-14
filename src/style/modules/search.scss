@@ -1,0 +1,154 @@
+.search{
+    position: relative;
+    background: #fff;
+    padding: 40px 30px 30px 30px;
+    width: 380px;
+    height: 374px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.search__title{
+    @include text(24px,29px,$black,bold);
+    margin-bottom: 21px;
+}
+.search__date{
+    width: 150px;
+}
+.guests{
+    position: relative;
+    margin: 21px 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+// .guests__drop{
+//     padding: 7px 7px 13px 14px;
+//     background-color: white;
+//     width: 100%;
+//     z-index: 1000;
+// }
+// .guests__person{
+//     @include text(12px,15px,normal,bold);
+//     text-transform: uppercase;
+//     margin-bottom: 7px;
+// } 
+// .guests__value{
+//     & button{
+//         @include text(18px,22px,$grey,normal);
+//         width: 40px;
+//         height: 40px;
+//         background: white;
+//         border-radius: 22px;
+//         border: 1px solid $border;
+//     }
+//     & .disabled{
+//         border: 1px solid rgba(31, 32, 65, 0.1);
+//         color:  rgba(31, 32, 65, 0.2);
+//     }
+// }
+// .guests__counter{
+//     text-align: center;
+//     margin: 0 7px;
+//     width: 20px;
+// }
+// .guest__btns{
+//     margin-top: 20px;
+// }
+.search__button{
+    width: 100%;
+}
+
+.cal{
+    width: 320px;
+    // height: 369px;
+    padding: 20px;
+    
+   
+}
+.cal__nav{
+    margin-bottom: 30px;
+}
+.cal__month{
+    @include text(19px,23px,$black,900);
+  
+}
+.cal__arrow{
+    cursor: pointer;
+    i{
+        @include text(22px,18px,$purple,400);
+    }
+}
+.cal__table{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    border-spacing: 0;
+    & th{
+        @include text(12px,15px,$purple,bold);
+        width: 40px;
+        height: 40px;
+    }
+    & td{
+        @include text(12px,15px,$grey,normal);
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        &.active{
+            position: relative;
+            background: $mainGradient;
+            border-radius: 22px;
+            color: white;
+            font-weight: bold;
+            &::after{
+                position: absolute;
+                content: '';
+                top: 0;
+                bottom: 0;
+                background: $mainGradient;
+                opacity: 0.25;
+            }
+        }
+        &.active.first{
+            &::after{
+                left: 50%;
+                right: 0%;
+            }
+        }
+        &.active.last{
+            &::after{
+                left: 0%;
+                right: 50%;
+            }
+        }
+        &.sub__active{
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                top: 0;
+                bottom: 0;
+                left: 0%;
+                right: 0%;
+                background: $mainGradient;
+                opacity: 0.25;
+            }
+        }
+        &.an{
+            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+            border-radius: 22px;
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+.cal__button{
+    @include text(12px,15px,$purple,bold);
+    text-transform: uppercase;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    &:hover{
+        transition: .3s ease-in all;
+        border-color:  $purple;
+    }
+}

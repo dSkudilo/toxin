@@ -1,0 +1,96 @@
+.search
+    h2.search__title Найдём номера под ваши пожелания
+    .flex.sb.ac
+        .search__date.form-control#calDrop 
+            label(for="timeOne") Прибытие
+            button.form-button(id="timeOne")(data-drop) ДД.ММ.ГГГГ
+        .search__date.form-control 
+            label(for="timeTwo") Выезд
+            button.form-button(id="timeTwo")(data-drop) ДД.ММ.ГГГГ 
+    .guests.form-control#drop
+        label(for="guests") Гости
+        button.form-button(data-drop) Сколько гостей
+        //- .guests__drop
+        //-     .guests__person.flex.sb.ac 
+        //-         p взрослые
+        //-         .guests__value.flex.ac
+        //-             button.disabled -
+        //-             p.guests__counter 0 
+        //-             button +
+        //-     .guests__person.flex.sb.ac 
+        //-         p дети
+        //-         .guests__value.flex.ac
+        //-             button -
+        //-             p.guests__counter 1 
+        //-             button +
+        //-     .guests__person.flex.sb.ac
+        //-         p младенцы
+        //-         .guests__value.flex.ac
+        //-             button -
+        //-             p.guests__counter 3 
+        //-             button +
+        //-     .guest__btns.flex.sb.ac 
+        //-         button.cal__button очистить
+        //-         button.cal__button применить 
+    button.purple-big подобрать номер ->
+    
+    //- .cal 
+        .cal__nav.flex.sb 
+            span.cal__arrow 
+                i.fas.fa-arrow-left
+            span.cal__month Август 2019 
+            span.cal__arrow 
+                i.fas.fa-arrow-right
+        
+        table.cal__table
+            tr 
+                th Пн
+                th Вт
+                th Ср
+                th Чт
+                th Пт
+                th Сб
+                th Вс
+            tr 
+                td 1
+                td 2
+                td 3
+                td 4
+                td.an 5
+                td 6
+                td 7
+            tr 
+                td 8
+                td 9
+                td 10
+                td 11
+                td 12
+                td 13
+                td 14
+            tr 
+                td 15
+                td 16
+                td 17
+                td 18
+                td.active.first 19
+                td.sub__active 20
+                td.sub__active 21
+            tr 
+                td.sub__active 22
+                td.active.last 23
+                td 24
+                td 25
+                td 26
+                td 27
+                td 28
+            tr 
+                td 29
+                td 30
+                td 31
+                td 
+                td 
+                td 
+                td   
+        .flex.sb.ac 
+            button.cal__button очистить
+            button.cal__button применить 

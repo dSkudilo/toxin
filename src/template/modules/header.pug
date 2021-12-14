@@ -1,0 +1,23 @@
+mixin navLink(link,name,arrow)
+    li.header-nav__item 
+        if(arrow)
+            a(href=link).link.flex=name
+                p.link_arrow 
+        else 
+            a(href=link).link=name 
+
+header.header
+    .header-wrap.container.flex.sb.ac
+        include ../modules/titleLogo 
+        .flex.ac
+            nav.header-nav
+                ul.header-nav__list.flex 
+                    +navLink('#','О нас')
+                    +navLink('#','Услуги',true)
+                    +navLink('#','Вакансии')
+                    +navLink('#','Новости')
+                    +navLink('#','Соглашения',true)
+            .header-btns 
+                button.btn Войти
+                button.purple Зарегистрироваться
+            

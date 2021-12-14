@@ -1,0 +1,61 @@
+.impressions{
+}
+.impressions__wrapper{}
+.impressions__diagram{
+    margin-top: 21px;
+}
+.impressions__appraisals{
+    margin-left: 50px;
+    margin-top: auto;
+}
+.impressions__great{
+    &::before{
+        background:$thirdGradient;
+    }
+}
+.impressions__well{
+    &::before{
+        background: $secondGradient;
+    }
+}
+.impressions__satisfactory{
+    &::before{
+        background: $mainGradient;
+    }
+}
+.impressions__disappointment{
+    &::before{
+        background: $fourthGradient;
+    }
+}
+.impressions__disgusting{
+    &::before{
+        background: $fiveGradient;
+    }
+}
+
+.diagram{
+    width: 160px;
+    height: 160px;
+}
+.diagram__segment{
+
+}
+.diagram__text{
+    font-size: .35em;
+    line-height: 1;
+    text-anchor: middle;
+    fill: $purple;   
+}
+.diagram__title{
+    transform: translateY(.7em);
+}
+.diagram__value{
+    font-weight: bold;
+    transform: translateY(-.2em); 
+}
+.diagram__notvote{
+    fill: #d2d3d4 !important;
+    text-transform: lowercase !important;
+    font-weight: normal !important;
+}

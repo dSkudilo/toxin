@@ -1,0 +1,29 @@
+.landing__root{
+    position: relative;
+}
+
+.landing__img{
+    background: url('../assets/img/landingpage/image3.jpg');
+    background-repeat: no-repeat;
+    height:$pageHeightPick;
+    background-size:cover;
+}
+.landing__content{
+    max-width: $contentWidth;
+    margin: 0 auto;
+    position: relative;
+    height:$pageHeightPick;
+}
+.landing__text{
+    position: absolute;
+    bottom: 18px;
+    right: 0;
+    text-align: right;
+    z-index: 1000;
+}
+.landing__search{
+    position: absolute;
+    top:70px;    
+    left: 0;
+    z-index: 1000;
+}

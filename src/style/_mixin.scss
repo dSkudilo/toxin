@@ -1,0 +1,79 @@
+@mixin btn($color:$purple,$bg:transparent,$p:10px,$w:24px ) {
+    padding: $p 20px;
+    min-width: $w;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    border-radius: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $color;
+    background: $bg !important;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        top: -2px;
+        bottom: -2px;
+        left: -2px;
+        right: -2px;
+        background: $mainGradient;
+        border-radius: 34px;
+        z-index: -1;
+    }
+    &:hover{
+        transition: all .3s ease;
+        cursor: pointer;
+        color: rgba(0, 0, 0, .4);
+        box-shadow: 0 0 10px rgba(0,0,0,0.4)
+    }
+}
+@mixin btnLike($color){
+    font-size: 12px !important;
+    line-height: 14px !important;
+    color: $color !important;
+    position: relative;
+    padding: 4px 10px 4px 25px;
+    background: white;
+    border: 1px solid $color !important;
+    border-radius: 22px;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    &::before{
+        position: absolute;
+        content: '♡';
+        font-size: 14px;
+        left: 12.5px;
+        transform: translateX(-50%);
+    }
+
+    &:hover{
+        transition: box-shadow,color .1s ease-in;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        color:$darkBorder;
+    }
+}
+@mixin  text($fontSize:14px,$lineHeight:18px,$color:$grey,$fontWeight:normal) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $color;
+    font-weight: $fontWeight;
+}
+
+@mixin radius($color:$grey,$w:40px,$h:40px,$bg:transparent,$fs:12px){
+    @include text($fs,15px,$color,normal);
+    width: $w;
+    height: $h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $bg;
+    user-select: none;
+    border-radius: 22px;
+}
+

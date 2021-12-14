@@ -1,0 +1,11 @@
+.not-found{
+    height: $pageHeightPick;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.not-found__content{
+    border: 1px solid $darkBorder;
+    padding: 100px;
+    box-shadow: $shadow;
+}

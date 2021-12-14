@@ -1,0 +1,178 @@
+.room{
+    flex: 1 0 auto;
+}
+.room__imgs{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.room__bigger{
+    width: 68%;
+}
+.room__big{
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
+}
+.room__half{
+    width: 50%;
+}
+.room__whole{
+    width: 100%;
+    
+}
+.room__less{
+    width: 32%;
+}
+.room__small{
+    display: block;
+    width: 100%;
+    height: 50%;
+    object-fit: fill;
+}
+.room__info{
+}
+.room__detalis{
+    padding:70px 0;
+}
+.room__main{
+    width: 61%;
+    margin-right: 6%;
+}
+.room__about{
+}
+.room__intelligence{}
+.room__information{
+    padding:23px 0 17px 0;
+    border-bottom: 1px solid $borderLite;
+    &:last-child{
+        border: none;
+    }
+}
+
+.room__feedback{
+    padding:13px 0 15px;
+}
+
+.room__other{
+    padding-top: 15px;
+}
+.room__rules{
+    & h4{
+        transform: translateX(20px);
+    }
+}
+.room__list{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.room__conditions{
+    min-width: 380px;
+    max-height: 512px;    
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: white;
+}
+.room__order{
+    padding: 40px 30px 30px;
+}
+.room__details{
+
+}
+.room__detail{
+    margin-bottom: 10px;
+    &:last-child{
+        margin-bottom: 30px;
+    }
+}
+.room__total{
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.circle{
+    position: relative;
+    width: 112px;
+    height: 112px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 100%;
+    margin-bottom: 10px;
+   &::before{
+       content: '';
+       position: absolute;
+       top: -4px;
+       bottom: -4px;
+       left: -4px;
+       right: -4px;
+       background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+       border-radius: 100%;
+       z-index: -1000;
+   }
+}
+.circle__border{
+    background-color: white;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: 50%;
+    z-index: -1000;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 50%;
+        left:0px;
+        background:$mainGradient ;
+        border-top-right-radius: 100%
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        left:0px;
+        background:$secondGradient ;
+        border-bottom-right-radius: 100%
+    }
+}

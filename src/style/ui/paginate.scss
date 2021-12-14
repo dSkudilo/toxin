@@ -1,0 +1,23 @@
+.paginate{
+    padding: 51px 0 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.paginate__content{
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+}
+.paginate__list{
+    display: flex;
+}
+.paginate__item{
+    list-style: none;
+}
+.paginate__text{
+    @include text(14px,24px,$darkGrey,normal);
+    margin-top: 10px;
+}

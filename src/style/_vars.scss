@@ -1,0 +1,31 @@
+$purple:#bc9cff;
+$darkPurple:#8254e6;
+$black:#1F2041;
+$grey:rgba(31, 32, 65, 0.5);
+$darkGrey: rgba(31, 32, 65, 0.75);
+$darkBorder:rgba(31, 32, 65, 0.3);
+$border:rgba(31, 32, 65, 0.2);
+$borderLite:rgba(31, 32, 65, 0.1);
+
+$contentWidth:1160px;
+$heightHeader:70px;
+
+$mainGradient:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+$secondGradient:linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+$thirdGradient:linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+$fourthGradient:linear-gradient(180deg, #919191 0%, #3D4975 100%);
+$fiveGradient:linear-gradient(180deg, #7a7979 0%, #161b2c 100%);
+$pageHeightPick:calc( 100vh - #{$heightHeader});
+
+$shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+$roomWidth:270px;
+
+$roomWidth1160:350px;
+
+$roomWidth1000:300px;
+$roomWidth950:250px;
+$roomWidth835:400px;
+$roomWidth768:310px;
+$roomWidth640:450px;
+$roomWidth460:300px;

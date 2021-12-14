@@ -1,0 +1,43 @@
+extends ../layout/main
+block content 
+    .container
+        .found.flex
+            include ../modules/aside.pug
+
+            main.found__main
+                h1.found__title Номера, которые мы для вас подобрали
+                .found__romms 
+                    .flex.flex-wrap
+                        
+                        .found__room 
+                            #found__slider
+                            .found__about
+                                .info-room.flex.sb.ac 
+                                    h4.number-room № 888 
+                                        span.luxury-room Люкс
+                                    p.text <strong>9 990₽</strong> в сутки
+                                .found__feedback.flex.sb.ac
+                                    .found__rating
+                                        .rating
+                                            input(type="radio" id="rating__5" value="5" name="rating").rating__item
+                                            label(for="rating__5").rating__label
+                                            input(type="radio" id="rating__4" value="4" name="rating").rating__item
+                                            label(for="rating__4").rating__label
+                                            input(type="radio" id="rating__3" value="3" name="rating").rating__item
+                                            label(for="rating__3").rating__label
+                                            input(type="radio" id="rating__2" value="2" name="rating").rating__item
+                                            label(for="rating__2").rating__label
+                                            input(type="radio" id="rating__1" value="1" name="rating").rating__item
+                                            label(for="rating__1").rating__label 
+                                    p.text <strong>65</strong> Отзывов
+                       
+
+                #paginate
+                    
+                                
+
+
+
+
+
+                            

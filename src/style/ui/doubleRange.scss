@@ -1,0 +1,40 @@
+.range-control{
+    margin: 23px 0 13px 0;
+    user-select: none;
+    display: block;
+}
+.range-scale{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    border: 1px solid $border;
+    border-radius: 3px;
+}
+.range-bar{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+    width: 30%;
+    height: 6px;
+    border-radius: 3px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+.range-toggle{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    transform: translate(-50% ,calc(-50% + 1.5px));
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.range-toggle__min{
+    left: 40%;
+}
+.range-toggle__max{
+    left: 70%;
+}
+// .range-bar

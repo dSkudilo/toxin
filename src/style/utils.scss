@@ -1,0 +1,61 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100% ;
+}
+#app{
+    height: 100%;
+}
+.wrap{
+    display: block;
+}
+.content{
+    flex: 1 0 auto;
+}
+.container{
+    max-width: $contentWidth;
+    margin: 0 auto;
+    position: relative;
+}
+.flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.sb{
+    justify-content: space-between;
+}
+.jcc{
+    justify-content: center;
+}
+.ac{
+    align-items: center;
+}
+.mb5{
+    margin-bottom: 5px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.mb15{
+    margin-bottom: 15px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mb30{
+    margin-bottom: 30px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.ml10{
+    margin-left: 10px;
+}
+.pb10{
+    padding-bottom: 10px;
+}
+.hidden{
+    display: none;
+}

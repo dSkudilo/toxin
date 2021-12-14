@@ -1,0 +1,28 @@
+.comments{
+    padding-top: 20px;
+}
+.comments__comment{
+    margin-bottom: 22px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.comments__who{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48px;
+    // margin-right: 10px;
+
+}
+.comments__like{
+    margin-top: 12px;
+    text-align: center;
+}
+.comments__avatar{
+    width: 48px;
+    height: 48px;
+    object-fit:cover;
+    border-radius:100% ;
+    display: block;
+}

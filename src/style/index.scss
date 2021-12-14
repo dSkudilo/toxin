@@ -1,0 +1,90 @@
+@import './nullstyle.scss';
+@import './vars';
+@import './mixin';
+@import './header.scss';
+@import './footer.scss';
+@import './sidebar.scss';
+
+@import './blocks.scss';
+@import './utils.scss';
+//ui
+@import './ui/form.scss';
+@import './ui/dropdown.scss';
+@import './ui/doubleRange.scss';
+@import './ui/rating.scss';
+@import './ui/slider.scss';
+@import './ui/paginate.scss';
+@import './ui/guest.scss';
+@import './ui//rollList.scss';
+@import './ui/impressions.scss';
+@import './ui/comments.scss';
+//modules
+@import './modules/search.scss';
+
+
+// landingPage
+@import './landingPage/landingPage.scss';
+@import './foundPage/foubdPage.scss';
+@import './roomPage/roomPage.scss';
+@import './authPage/authPage.scss';
+@import './login//loginPage.scss';
+@import './notFoundPage/notFound.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html,body{
+    font-family: Montserrat;
+    height: 100%;
+    
+}
+button{
+    background-color: transparent
+}
+
+
+.btn{
+    @include btn()
+}
+.purple{
+    @include btn(white,$mainGradient)
+}
+.purple-big{
+    @include btn(white,$mainGradient,14px,100%)
+}
+
+.radius-btn{
+    @include radius();
+    &:hover{
+        transition: background-color .1s ease;
+        background-color: rgba(31, 32, 65, 0.06);
+    }
+}
+.radius-btn__arrow{
+    @include radius(white,40px,40px,$secondGradient,20px);
+    cursor: pointer;
+    &:hover{
+        transition: box-shadow .1s ease;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
+    }
+}
+.radius-btn__arrow_disabled{
+    @include radius(white,40px,40px,$border,20px);
+    cursor: default;
+    &:hover{
+        box-shadow: none;
+    }
+    
+}
+.radius-btn_active{
+    @include radius(white,40px,40px,$mainGradient,12px);
+    
+    &:hover{
+        transition: box-shadow .1s ease;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
+    }
+}
+.radius-btn_nocursor{
+    @include radius($grey,40px,40px,transparent,12px);
+}
+.btn-like{
+    @include btnLike($border)
+}
